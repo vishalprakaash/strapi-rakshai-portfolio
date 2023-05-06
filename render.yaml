@@ -5,6 +5,10 @@ services:
     plan: starter
     buildCommand: yarn install && yarn build
     startCommand: yarn start
+    disk:
+      name: strapi-data
+      mountPath: /data
+      sizeGB: 1
     healthCheckPath: /_health
     envVars:
       - key: NODE_VERSION
