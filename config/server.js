@@ -8,6 +8,9 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  dirs: {
+    public: "./public",
+  },
   upload: {
     provider: 'cloudinary',
     providerOptions: {
